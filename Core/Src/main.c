@@ -332,6 +332,9 @@ void IDCheck(){
 		else if(ButtonMatrix != 512 && ButtonMatrix > 0 && ButtonMatrix!= 4096){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
 	case 1:
 		if(ButtonMatrix == 2){
@@ -339,6 +342,9 @@ void IDCheck(){
 		}
 		else if(ButtonMatrix != 2 && ButtonMatrix > 0 &&ButtonMatrix != 512 ){
 			state = 12;
+		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
 		}
 		break;
 	case 2:
@@ -348,13 +354,20 @@ void IDCheck(){
 		else if(ButtonMatrix != 1024 && ButtonMatrix > 0 &&ButtonMatrix != 2){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
+
 	case 3:
 		if(ButtonMatrix == 2){
 			state = 4;
 		}
 		else if(ButtonMatrix != 2 && ButtonMatrix > 0 &&ButtonMatrix != 1024 ){
 			state = 12;
+		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
 		}
 		break;
 	case 4:
@@ -363,6 +376,9 @@ void IDCheck(){
 		}
 		else if(ButtonMatrix != 8 && ButtonMatrix > 0 &&ButtonMatrix != 2 ){
 			state = 12;
+		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
 		}
 		break;
 	case 5:
@@ -373,6 +389,9 @@ void IDCheck(){
 		else if(ButtonMatrix != 32 && ButtonMatrix > 0 &&ButtonMatrix != 8 ){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
 	case 6:
 		if(ButtonMatrix == 8 && temp != ButtonMatrix){
@@ -381,6 +400,9 @@ void IDCheck(){
 		}
 		else if(ButtonMatrix != 8 && ButtonMatrix > 0 &&ButtonMatrix != 32 ){
 			state = 12;
+		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
 		}
 		break;
 	case 7:
@@ -391,6 +413,9 @@ void IDCheck(){
 		else if(ButtonMatrix != 8 && ButtonMatrix > 0 ){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
 	case 8:
 		if(ButtonMatrix == 8 && temp != ButtonMatrix){
@@ -400,6 +425,9 @@ void IDCheck(){
 		else if(ButtonMatrix != 8 && ButtonMatrix > 0 ){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
 	case 9:
 		if(ButtonMatrix == 4){
@@ -408,6 +436,9 @@ void IDCheck(){
 		else if(ButtonMatrix != 4 && ButtonMatrix > 0 &&ButtonMatrix != 8){
 			state = 12;
 		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
+		}
 		break;
 	case 10:
 		if(ButtonMatrix == 1024){
@@ -415,6 +446,9 @@ void IDCheck(){
 		}
 		else if(ButtonMatrix != 1024 && ButtonMatrix > 0 &&ButtonMatrix != 4){
 			state = 12;
+		}
+		else if(ButtonMatrix == 4096){
+			state = 0;
 		}
 		break;
 	case 11:
